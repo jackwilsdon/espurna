@@ -4794,6 +4794,18 @@
     #define RELAY3_TYPE             RELAY_TYPE_NORMAL
     #define RELAY4_TYPE             RELAY_TYPE_NORMAL
 
+#elif defined(ESP01_BH1750)
+
+    // Custom ESP-01-based lux sensor
+    #define MANUFACTURER   "Jack Wilsdon <jack.wilsdon@gmail.com>"
+    #define DEVICE         "ESP-01 Lux"
+
+    // Enable support for the BH1750 lux sensor
+    #define BH1750_SUPPORT 1
+
+    #define I2C_SDA_PIN    2
+    #define I2C_SCL_PIN    0
+
 // -----------------------------------------------------------------------------
 // NEDIS WIFIP310FWT Wi-Fi Smart Extension Socket
 // 3x Schuko Type F, 4x USB, 16 A
