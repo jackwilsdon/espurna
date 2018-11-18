@@ -4142,6 +4142,19 @@
 
     #define SENSOR_ENERGY_UNITS         ENERGY_KWH
     #define SENSOR_POWER_UNITS          POWER_WATTS
+
+#elif defined(ESP01_BH1750)
+
+    // Custom ESP-01-based lux sensor
+    #define MANUFACTURER   "Jack Wilsdon <jack.wilsdon@gmail.com>"
+    #define DEVICE         "ESP-01 Lux"
+
+    // Enable support for the BH1750 lux sensor
+    #define BH1750_SUPPORT 1
+
+    #define I2C_SDA_PIN    2
+    #define I2C_SCL_PIN    0
+
 // -----------------------------------------------------------------------------
 
 #else
