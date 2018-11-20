@@ -4816,6 +4816,28 @@
     #define I2C_SDA_PIN    2
     #define I2C_SCL_PIN    0
 
+#elif defined(ESP01_RFBRIDGE)
+
+    // Custom ESP-01 based RF transciever.
+    #define MANUFACTURER   "Jack Wilsdon <jack.wilsdon@gmail.com>"
+    #define DEVICE         "ESP-01 RF"
+
+    // We're pretending to be a Sonoff bridge.
+    #define ITEAD_SONOFF_RFBRIDGE
+
+    // Use the RF bridge to provide control support.
+    #define RELAY_PROVIDER      RELAY_PROVIDER_RFBRIDGE
+
+    // Use 8 virtual switches.
+    #define DUMMY_RELAY_COUNT   8
+
+    // Enable direct RF control on pins 0 and 2.
+    #define RFB_DIRECT     1
+    #define RFB_RX_PIN     2
+    #define RFB_TX_PIN     0
+
+#endif
+
 // -----------------------------------------------------------------------------
 // NEDIS WIFIP310FWT Wi-Fi Smart Extension Socket
 // 3x Schuko Type F, 4x USB, 16 A
