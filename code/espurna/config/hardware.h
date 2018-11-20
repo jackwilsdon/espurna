@@ -4794,6 +4794,16 @@
     #define RELAY3_TYPE             RELAY_TYPE_NORMAL
     #define RELAY4_TYPE             RELAY_TYPE_NORMAL
 
+#elif defined(ESP8266_TEMPERATURE)
+
+    // Custom ESP8266-based temperature sensor.
+    #define MANUFACTURER   "Jack Wilsdon <jack.wilsdon@gmail.com>"
+    #define DEVICE         "ESP8266-Temperature"
+
+    // Enable support for the Dallas 1-Wire temperature sensor
+    #define DALLAS_SUPPORT 1
+    #define DALLAS_PIN     2
+
 #elif defined(ESP01_BH1750)
 
     // Custom ESP-01-based lux sensor
