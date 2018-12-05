@@ -4836,6 +4836,20 @@
     #define RFB_RX_PIN     2
     #define RFB_TX_PIN     0
 
+#elif defined(ESP01_PULSEMETER)
+
+    // Custom ESP-01 based pulse meter.
+    #define MANUFACTURER         "Jack Wilsdon <jack.wilsdon@gmail.com>"
+    #define DEVICE               "ESP-01 PULSEMETER"
+
+    #define PULSEMETER_SUPPORT   1
+    #define PULSEMETER_PIN       3
+
+    // Disable the serial port because the pulsemeter uses the RX pin.
+    #define DEBUG_SERIAL_SUPPORT 0
+
+    // We need to increase debounce for some reason.
+    #define PULSEMETER_DEBOUNCE  200
 #endif
 
 // -----------------------------------------------------------------------------
