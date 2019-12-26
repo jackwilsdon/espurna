@@ -335,13 +335,9 @@ void migrate() {
             setSetting("chGPIO", 0, 15);
             setSetting("chGPIO", 1, 13);
             setSetting("chGPIO", 2, 12);
-            setSetting("chGPIO", 3, 14);
-            setSetting("chGPIO", 4, 4);
             setSetting("chLogic", 0, 0);
             setSetting("chLogic", 1, 0);
             setSetting("chLogic", 2, 0);
-            setSetting("chLogic", 3, 0);
-            setSetting("chLogic", 4, 0);
             setSetting("relays", 1);
 
         #elif defined(ITEAD_BNSZ01)

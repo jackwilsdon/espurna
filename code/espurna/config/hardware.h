@@ -1431,17 +1431,13 @@
     #define LED1_PIN_INVERSE    1
 
     // Light
-    #define LIGHT_CHANNELS      5
+    #define LIGHT_CHANNELS      3
     #define LIGHT_CH1_PIN       15      // RED
     #define LIGHT_CH2_PIN       13      // GREEN
     #define LIGHT_CH3_PIN       12      // BLUE
-    #define LIGHT_CH4_PIN       14      // WHITE1
-    #define LIGHT_CH5_PIN       4       // WHITE2
     #define LIGHT_CH1_INVERSE   0
     #define LIGHT_CH2_INVERSE   0
     #define LIGHT_CH3_INVERSE   0
-    #define LIGHT_CH4_INVERSE   0
-    #define LIGHT_CH5_INVERSE   0
 
 #elif defined(HUACANXING_H802)
 
